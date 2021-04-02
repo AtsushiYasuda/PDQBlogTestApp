@@ -1,9 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
+    stage('hello') {
       steps {
-        git(url: 'https://github.com/AtsushiYasuda/PDQBlogTestApp.git', branch: 'jenkins-blue-ocean')
+        echo 'hello'
+      }
+    }
+
+    stage('cat') {
+      steps {
+        sh 'cat Test-App.ps1'
       }
     }
 
