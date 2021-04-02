@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('cat') {
+    stage('test -f') {
       steps {
-        sh 'cat Test-App.ps1'
+        fileExists 'Test-App.ps1'
       }
     }
 
