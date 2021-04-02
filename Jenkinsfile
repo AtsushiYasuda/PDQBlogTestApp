@@ -7,9 +7,15 @@ pipeline {
       }
     }
 
-    stage('test -f') {
+    stage('check file') {
       steps {
         fileExists 'Test-App.ps1'
+      }
+    }
+
+    stage('run script') {
+      steps {
+        powershell 'Test-App.ps1'
       }
     }
 
