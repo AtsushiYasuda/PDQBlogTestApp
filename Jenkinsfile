@@ -15,7 +15,7 @@ pipeline {
 
     stage('run script') {
       steps {
-        powershell(script: '.\\Test-App.ps1', returnStatus: true, returnStdout: true)
+        powershell(script: '.\\Test-App.ps1', returnStatus: true)
       }
     }
 
