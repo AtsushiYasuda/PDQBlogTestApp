@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/AtsushiYasuda/PDQBlogTestApp.git', branch: 'master')
+        git(url: 'https://github.com/AtsushiYasuda/PDQBlogTestApp.git', branch: 'jenkins-blue-ocean')
       }
     }
 
